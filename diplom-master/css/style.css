@@ -35,7 +35,7 @@ font-family: 'Raleway';
   width: 150px;
   height: 59px;
   background-image: url('../img/LOGO.png');
-  background-size: cover;
+  background-size: cover:
   background-blend-mode: multiply;
 }
 #link_one{
