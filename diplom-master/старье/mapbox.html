@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8' />
+    <title>БЛЯДСКАЯ СУКА</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.0.0/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body { margin:0; padding:0; }
+        #map { position:absolute; top:0; bottom:0; width:100%; }
+    </style>
+</head>
+<body>
+
+
+<div id='map'></div>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiZGlwbG9tIiwiYSI6ImNqdnh6MHpwYzA5a2kzem1yeWxwejRrMGgifQ.Cwvgz2FHdJXgG-zSM3vNsQ';
+var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    center: [40, 50],
+    zoom: 2
+});
+
+map.on('load', function() {
+    // Add a geojson point source.
+    map.addSource('trees', {
+        "type": "geojson",
+        "data": "./img/trees.geojson"
+    });
+
+    map.addLayer({
+        "id": "trees-point",
+        "type": "circle",
+        "source": "trees",
+        "minzoom": 1,
+        "paint": {
+      'circle-radius': 10,
+      'circle-color': 'rgb(171, 72, 33)'
+    }
+});
+
+</script>
+
+</body>
+</html>

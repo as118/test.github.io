@@ -1,0 +1,397 @@
+* {
+box-sizing: border-box;
+}
+.row:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.row { display: inline-block; }
+* html .row { height: 1%; }
+.row { display: block; }
+
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Montserrat';
+background: #0d1018;
+}
+#block {
+width: 200vh;
+height: 100px;
+background: #1a1e23;
+float: left;
+}
+#one {
+text-align: center;
+color: white;
+font-size: 12px;
+height: 90vh;
+width: 200vh;
+display: table;
+}
+#poloska {
+width:            200px;
+height:           12px;
+margin-bottom:    10px;
+background:       white;
+  transition:       1.4s;
+}
+#poloska:hover {
+margin-left: 155px;
+transition:       1.4s;
+}
+#poloska:active {
+  background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
+
+}
+#HEAD {
+display: table-cell;
+vertical-align: middle;
+font-weight: 900;
+font-size: 50px;
+line-height: 80px;
+text-shadow: 0px 0px 20px #ff0068 hidden;
+}
+
+#inter {
+font-size: 15px;
+color: white;
+
+float: left;
+border: solid red 1px hidden;
+background: red hidden;
+text-align: center;
+}
+#static {
+  font-size: 15px;
+  color: white;
+  float: left;
+  border: solid red 1px hidden;
+  background: red hidden;
+  text-align: center;
+  margin-left: 50px;
+}
+.menu {
+margin-right: 100px ;
+height: 30px;
+min-width: 40px;
+float: right;
+padding: 28px;
+}
+.fas {
+color: white;
+float: left;
+margin-left: 100px;
+margin-top: 30px;
+}
+#poisk {
+height: 45px;
+outline: none;
+width: 60vh;
+margin-top: 28px;
+margin-left: 50px;
+margin-right: 0px;
+padding-left: 20px;
+border-radius: px;
+border: solid 2px white;
+margin-left: 120px;
+}
+#map_back {
+width: 100%;
+height: 110vh;
+background: url(../img/map_background.png);
+background-size: cover;
+z-index: -1;
+margin-top: -240px;
+background-attachment:local;
+position: absolute;
+}
+.chsH {
+font-size: 20px;
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+color: white;
+}
+.CHS_description {
+font-size: 20px;
+text-align:justify;
+padding-left: 300px;
+padding-right: 300px;
+line-height: 35px;
+margin-bottom: 100px;
+color: white;
+
+}
+
+}
+.swiper-slide {
+border: solid black 2px;
+background: black;
+width: 200vh;
+height: 500px;
+text-align: center;
+background-attachment: fixed;
+color: white;
+font-size: 20px;
+padding:110px;
+font-weight: 500;
+
+}
+#headertext {
+color: black;
+font-size: 12px;
+text-align: left;
+min-width: 50px;
+float: left;
+padding: 7px;
+font-weight: 700;
+background: white;
+margin-left: 100px;
+margin-top: 28px;
+padding-left: 20px;
+padding-right: 20px;
+}
+section {
+margin-top: 100px;
+}
+a {
+text-decoration: none;
+}
+a:link {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:active {
+color: gray;
+}
+@media screen and (max-width: 720px) {
+  #block {
+  width: 375px;
+  height: 30px;
+  background: #1a1e23;
+  padding-left: 30px;
+  }
+  #headertext {
+  color: white;
+  font-size: 5px;
+  text-align: left;
+  width: 62px;
+  float: left;
+  padding-top: 8px;
+  }
+  #one {
+  text-align: center;
+  color: white;
+  font-size: 6px;
+  width: 375px;
+  }
+  #HEAD {
+  line-height: 20px;
+  }
+  #inter {
+  font-size: 4px;
+  color: white;
+  width: 65px;
+  height: 30px;
+  float: left;
+  padding-top: 12px;
+  border: solid red 1px hidden;
+  background: red hidden;
+  text-align: center;
+  }
+  #static {
+    font-size: 4px;
+    color: white;
+    width: 65px;
+    height: 30px;
+    float: left;
+    padding-top: 12px;
+    border: solid red 1px hidden;
+    background: red hidden;
+    text-align: center;
+  }
+  .menu {
+  margin-left: 200px;
+  height: 30px;
+  min-width: 40px;
+  margin-right:
+  }
+
+  .chsH {
+  font-size: 7px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  .CHS_description {
+  font-size: 7px;
+  text-align:justify;
+  padding-left: 30px;
+  padding-right: 30px;
+  }
+  #image_auto {
+  width: 375px;
+  height: 100px;
+  margin-top: 30px;
+  background-image: url("https://images.unsplash.com/photo-1471479917193-f00955256257?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2048&q=80");
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 40px;
+  font-weight: 500;
+  }
+}
+
+.swiper-container {
+    margin-top: 150px;
+    width: 100vh;
+    height: 500px;
+    text-align: center;
+    margin-bottom: 100px;
+
+  }
+.sw_con {
+  margin-bottom: 150px;
+  margin-right: 100px ;
+}
+
+.auto {
+background: black;
+color: white;
+height: 100%;
+width: 100%;
+margin: 0 auto;
+border: solid white 3px;
+}
+.jopa {
+background: white;
+height: 100px;
+width: 100px;
+color: red;
+border: solid white 4px;
+}
+.ipad {
+float: left;
+height: 78vh;
+width: 108.5vh;
+background-image: url('https://pp.userapi.com/c855728/v855728256/2e515/YYJXGjaPZLM.jpg');
+background-size:contain;
+margin-top: 100px;
+margin-left: -140px;
+border-radius: 58px;
+margin-bottom: 100px;
+background-attachment: inherit;
+}
+.fisrt_map {
+float: left;
+margin-top: 180px;
+margin-left: 190px;
+margin-right: 100px;
+line-height: 25px;
+width: 60vh;
+height: 60vh;
+padding: 55px;
+padding-top: 40px;
+color: white;
+font-size: 15px;
+}
+h3 {
+font-size: 32px;
+line-height: 40px;
+}
+.button {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+  background-color: white;
+  margin-top: 50px;
+  color: black;
+  font-size: 14px;
+  padding: 8px;
+  font-weight: bold;
+  transition: 0.6s;
+  cursor: pointer;
+}
+.button:hover {
+  width: 100%;
+    border-radius: 50px;
+}
+.button:active {
+  background: #af00ff70;
+  transition: 0.1s;
+  color: white;
+  border-radius: 50px;
+}
+.map_one {
+  background-image: url('https://habrastorage.org/files/639/a5a/373/639a5a37361e44929dea30edc8dde726.jpg');
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+.map_two {
+  background-image: url('https://habrastorage.org/files/49c/4ca/a43/49c4caa43d554fba958821cbf07bc707.jpg');
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+.map_three {
+  background-image: url('https://habrastorage.org/files/2b2/0c8/3c3/2b20c83c33d3404a98f90a8ad035729f.jpg');
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+.map_four {
+  background-image: url('https://habrastorage.org/files/adf/a84/78d/adfa8478d61d4cfb9bd24f58ea184bd0.jpg');
+  color: white;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.sw_des {
+width: 100%;
+height: 80px;
+background-image: linear-gradient(120deg, #f093fb 0%, #f5576c 100%);
+color: white;
+float: left;
+text-align: center;
+padding: 13px;
+margin-bottom: 100px ;
+}
+.Explore {
+color: white;
+width: 500px;
+height: 300px;
+padding: 30px;
+margin-left: 100px;
+text-align: left;
+margin-top: ;
+border: solid #f5576c 4px;
+z-index: 0;
+float: left;
+}
+#animate {
+border: solid black 10px;
+margin-left: -65px;
+}
+section {
+border: solid red 10px hidden;
+height: 180vh
+}
